@@ -43,7 +43,7 @@ class TextCNN(object):
             # global max pooling layer
             gmp = tf.reduce_max(conv, reduction_indices=[1], name='gmp')
             # dropout
-            gmp = tf.contrib.layers.dropout(gmp, self.drop_keep_prob)
+            # gmp = tf.contrib.layers.dropout(gmp, self.drop_keep_prob)
 
         with tf.name_scope("score"):
             # fully-connected
