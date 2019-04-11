@@ -31,11 +31,11 @@ def batch_index(length, batch_size, is_shuffle=True):
 
 def cat_to_id(classes=None):
     """
-    :param classes: 分类标签；默认为汽车的八大属性标签
+    :param classes: 分类标签；默认为八大属性标签
     :return: {分类标签：id}
     """
     if not classes:
-        classes = ['外观', '空间', '动力', '内饰', '油耗', '操控', '性价比', '舒适性']
+        classes = ['c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8']
     cat2id = {cat: idx for (idx, cat) in enumerate(classes)}
     return cat2id
 
